@@ -1,0 +1,24 @@
+html(lang = "en")
+head
+    meta(charset="UTF-8")
+    title Express
+body
+    #root
+        .header
+            h1 My app
+            .nav
+                ul
+                    li
+                        a(href="/")
+                            | Home
+                    li
+                        a(href="/books/add")
+                            | Add Book
+                    li
+                        a(href="/auth/register") 
+                            | register
+                    li
+                        a(href="/auth/login") 
+                            | login         
+        .content
+            block content
